@@ -20,6 +20,6 @@ function currentLine(katzDeliLine){
     for (var i = 0; i < katzDeliLine.length; i++){
       katzDeliLine[i] = `${i + 1}. ${katzDeliLine[i]},`
     }
-    return line
+    return line + katzDeliLine.split(' ')
   }
 }

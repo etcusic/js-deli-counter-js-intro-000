@@ -8,6 +8,6 @@ function nowServing(katzDeliLine){
     return "There is nobody waiting to be served!"
   } else {
     var person = katzDeliLine.shift()
-    return `Currently serving &{person}!`
+    return `Currently serving ${person}!`
   }
 }

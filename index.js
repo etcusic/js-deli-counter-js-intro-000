@@ -18,7 +18,7 @@ function currentLine(katzDeliLine){
   } else {
     var line = "The line is currently: "
     for (var i = 0; i < katzDeliLine.length; i++){
-      if (i === (katzDeliLine.length - 1){
+      if (i === (katzDeliLine.length - 1)){
         katzDeliLine[i] = `${i + 1}. ${katzDeliLine[i]}`
       } else {
         katzDeliLine[i] = `${i + 1}. ${katzDeliLine[i]},`

@@ -18,8 +18,12 @@ function currentLine(katzDeliLine){
   } else {
     var line = "The line is currently: "
     for (var i = 0; i < katzDeliLine.length; i++){
-      katzDeliLine[i] = `${i + 1}. ${katzDeliLine[i]},`
+      if (i === (katzDeliLine.length - 1){
+        katzDeliLine[i] = `${i + 1}. ${katzDeliLine[i]}`
+      } else {
+        katzDeliLine[i] = `${i + 1}. ${katzDeliLine[i]},`
+      }
     }
-    return line + katzDeliLine.join(' ').slice(0, katzDeliLine.length)
+    return line + katzDeliLine.join(' ')
   }
 }
